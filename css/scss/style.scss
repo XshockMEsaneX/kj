@@ -1,0 +1,132 @@
+html {
+  /*display: none;*/
+}
+
+body, h1, h2, h3, h4, h5, h6, p, i, span, a {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+#header {
+  position: relative;
+  margin: 0 auto;
+}
+
+#content {
+  min-height: 100vh;
+  margin-bottom: -24px;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen {}
+
+/* Define mobile styles */
+
+@media only screen and (max-width: 46em) {
+  body {
+    background: url(../img/bg5-mobile.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #header {
+    top: 1%;
+  }
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 46.0625em) {
+  #header {
+    top: 25%;
+  }
+  #social {
+    position: relative;
+    top: 22%;
+  }
+  #email {
+    position: relative;
+    top: 27%;
+  }
+  body {
+    background: url(../img/bg5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/* min-width 641px, medium screens */
+
+#header {
+  padding-bottom: 30px;
+  h1 {
+    border-top: solid 1px #5e5e5d;
+    border-bottom: solid 1px #5e5e5d;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  h3#how-can {
+    color: #ddd;
+    text-shadow: 0 0 3px #5FA2C5;
+  }
+  h2 span {
+    margin: 0 10px;
+    border-bottom: solid 1px #5e5e5d;
+  }
+}
+
+#social i {
+  font-size: 46px;
+  margin: 15px 15px 0 15px;
+  transition: all 1.5s ease;
+  &:hover {
+    transition: all 1.5s ease;
+    text-shadow: 0 0 7px #5FA2C5;
+    color: #fff;
+  }
+}
+
+#email a {
+  color: #ddd;
+  font-size: 24px;
+}
+
+#blue-pop {
+  color: #21B1FC;
+  text-shadow: 0 0 7px #7FD0FA;
+}
+
+@media only screen and (max-width: 46em) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  #social i {
+    margin: 15px 10px 0 10px;
+  }
+}
+
+.ghost-button {
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 3px solid rgba(245, 245, 245, 0.7);
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: all 1.5s ease;
+  &:hover {
+    transition: all 1.5s ease;
+    text-shadow: 0 0 7px #5FA2C5;
+    color: #fff;
+    box-shadow: 0 0 7px #5FA2C5;
+  }
+}
