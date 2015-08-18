@@ -1,3 +1,5 @@
-$(document).ready(function(){
+var $ = jQuery.noConflict();
+
+$(function(){
 	$('html').fadeIn('slow');
 });

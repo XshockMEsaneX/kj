@@ -14,13 +14,18 @@ module.exports = function(grunt) {
     // },
         sass: {
         options: {
-          sourceMap: true
         },
         dist: {
             files: {
                 'css/style.css': 'css/scss/style.scss'
             }
         }
+    },
+    watch: {
+      css: {
+        files: '**/*.scss',
+        tasks: ['sass']
+      }
     }
   }
   );
@@ -31,6 +36,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task(s).
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['watch']);
 
 };
