@@ -194,3 +194,13 @@ function get_pinterest_followers(){
 	return format_number( $pinterest_followers );
 }
 add_shortcode( 'pinterest_follows', 'get_pinterest_followers' );
+
+/**
+ * Load Pinterest Followers
+ */
+require_once( get_template_directory() . '/facebook/facebookLikes.php' );
+function get_facebook_likes(){
+	global $facebook_likes;
+	return format_number( $facebook_likes );
+}
+add_shortcode( 'facebook_likes', 'get_facebook_likes' );
