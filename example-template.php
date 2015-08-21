@@ -14,6 +14,14 @@
  */
 
 get_header(); ?>
+<style>
+	.fa {
+		font-size: 64px;
+	}
+	.featured .row {
+		margin-bottom: 30px;
+	}
+</style>
 
 <div class="off-canvas-wrap" data-offcanvas>
 	<div class="inner-wrap">
@@ -39,29 +47,45 @@ get_header(); ?>
 		</aside>
 
 		<section class="text-center">
-			<img src="<?php echo get_template_directory_uri() . '/img/KJlogo.jpg' ?>" alt="" >
+			<img src="<?php echo get_template_directory_uri() . '/img/KJlogo.jpg' ?>" alt="" style="max-height: 94vh; width: auto;">
 		</section>
 
 
-		<section class="social-numbers text-center">
+		<section class="social-numbers text-center" style="margin-top:50px;">
 			<h1 class="text-center">Social Media</h1>
 			<div class="row">
 				<div class="small-6 medium-3 columns">
-					<img src="//placehold.it/100x100&text=logo" alt="">
+					<i class="fa fa-facebook-square"></i>
 					<p>1.3k Likes</p>
 				</div>
 				<div class="small-6 medium-3 columns">
-				<img src="//placehold.it/100x100&text=logo" alt="">
+				<i class="fa fa-twitter-square"></i>
 					<p>1000 Followers</p>
 				</div>
 				<div class="small-6 medium-3 columns">
-				<img src="//placehold.it/100x100&text=logo" alt="">
+				<i class="fa fa-instagram"></i>
 					<p>1000 Followers</p>
 				</div>
 				<div class="small-6 medium-3 columns">
-				<img src="//placehold.it/100x100&text=logo" alt="">
+				<i class="fa fa-pinterest-square"></i>
 					<p>1000 Followers</p>
 				</div>
+			</div>
+		</section>
+
+		<section class="featured">
+			<h1 class="text-center">Where Kathry's Work Has Been Featured</h1>
+			<div class="row">
+				<div class="medium-4 columns"><img src="//placehold.it/300x300&text=Feature Image" alt=""></div>
+				<div class="medium-8 columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat itaque similique rerum facere voluptas nostrum aliquam atque deserunt, tempore perferendis harum sed minus. Maxime id ut consectetur ipsa, reprehenderit, consequuntur.</p></div>
+			</div>
+			<div class="row">
+				<div class="medium-4 columns"><img src="//placehold.it/300x300&text=Feature Image" alt=""></div>
+				<div class="medium-8 columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat itaque similique rerum facere voluptas nostrum aliquam atque deserunt, tempore perferendis harum sed minus. Maxime id ut consectetur ipsa, reprehenderit, consequuntur.</p></div>
+			</div>
+			<div class="row">
+				<div class="medium-4 columns"><img src="//placehold.it/300x300&text=Feature Image" alt=""></div>
+				<div class="medium-8 columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat itaque similique rerum facere voluptas nostrum aliquam atque deserunt, tempore perferendis harum sed minus. Maxime id ut consectetur ipsa, reprehenderit, consequuntur.</p></div>
 			</div>
 		</section>
 
