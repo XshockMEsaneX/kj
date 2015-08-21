@@ -38,7 +38,12 @@ get_header(); ?>
 			</ul>
 		</aside>
 
-		<section class="social-numbers container text-center">
+		<section class="text-center">
+			<img src="<?php echo get_template_directory_uri() . '/img/KJlogo.jpg' ?>" alt="" >
+		</section>
+
+
+		<section class="social-numbers text-center">
 			<h1 class="text-center">Social Media</h1>
 			<div class="row">
 				<div class="small-6 medium-3 columns">
@@ -60,7 +65,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="testimonials container">
+		<section class="testimonials">
 			<div class="row">
 				<h1 class="text-center">Testimonials</h1>
 				<div class="small-12 columns">
@@ -71,7 +76,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="recent-posts container">
+		<section class="recent-posts">
 			<div class="row">
 				<h1 class="text-center">Recent Posts</h1>
 				<div class="medium-4 columns">
@@ -99,7 +104,6 @@ get_header(); ?>
 		</section>
 
 		<footer style="background: #333333; margin-top:100px; min-height:45px; color:white; padding: 10px 0;">
-			<div class="container">
 				<div class="row">
 					<div class="small-12 columns text-center">
 						<p>Copyright &copy; Kathryn Janicek - 2015</p>
@@ -108,7 +112,6 @@ get_header(); ?>
 						<a style="color:white;" href="#">link</a>
 					</div>
 				</div>
-			</div>
 		</footer>
 
 		<a class="exit-off-canvas"></a>
