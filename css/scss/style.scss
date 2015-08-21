@@ -8,9 +8,14 @@ html {
   display: none;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, i, span, a {
+body {
   font-family: 'Open Sans', sans-serif;
-  color: $main-text-color;
+
+}
+.home {
+   h1, h2, h3, h4, h5, h6, p, i, span, a {
+    color: $main-text-color;
+    }
 }
 
 #header {

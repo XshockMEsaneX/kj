@@ -1,8 +1,10 @@
 html {
   display: none; }
 
-body, h1, h2, h3, h4, h5, h6, p, i, span, a {
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.home h1, .home h2, .home h3, .home h4, .home h5, .home h6, .home p, .home i, .home span, .home a {
   color: rgba(245, 245, 245, 0.7); }
 
 #header {
