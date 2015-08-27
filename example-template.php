@@ -23,28 +23,7 @@ get_header(); ?>
 	}
 </style>
 
-<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
-		<nav class="tab-bar">
-
-			<section class="middle tab-bar-section">
-				<h1 class="title">Kathryn Janicek</h1>
-			</section>
-
-			<section class="right-small">
-				<a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
-			</section>
-		</nav>
-
-		<aside class="right-off-canvas-menu">
-			<ul class="off-canvas-list">
-				<li><label>Menu</label></li>
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-				<li><a href="#">Link 4</a></li>
-			</ul>
-		</aside>
+<?php get_template_part( 'template-parts/menu-header' ); ?>
 
 		<section class="text-center">
 			<img src="<?php echo get_template_directory_uri() . '/img/KJlogo.jpg' ?>" alt="" style="max-height: 94vh; width: auto;">
@@ -74,7 +53,7 @@ get_header(); ?>
 		</section>
 
 		<section class="featured">
-			<h1 class="text-center">Where Kathry's Work Has Been Featured</h1>
+			<h1 class="text-center">Where Kathryn's Work Has Been Featured</h1>
 			<div class="row">
 				<div class="medium-4 columns"><img src="//placehold.it/300x300&text=Feature Image" alt=""></div>
 				<div class="medium-8 columns"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat itaque similique rerum facere voluptas nostrum aliquam atque deserunt, tempore perferendis harum sed minus. Maxime id ut consectetur ipsa, reprehenderit, consequuntur.</p></div>
@@ -127,23 +106,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<footer style="background: #333333; margin-top:100px; min-height:45px; color:white; padding: 10px 0;">
-				<div class="row">
-					<div class="small-12 columns text-center">
-						<p>Copyright &copy; Kathryn Janicek - 2015</p>
-							<a style="color:white;" href="#">link</a>
-						<a style="color:white;" href="#">link</a>
-						<a style="color:white;" href="#">link</a>
-					</div>
-				</div>
-		</footer>
-
-		<a class="exit-off-canvas"></a>
-
-	</div>
-</div>
+	<?php get_template_part( 'template-parts/menu-footer' ); ?>
 
 
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

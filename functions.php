@@ -110,6 +110,23 @@ function kj_widgets_init() {
 }
 add_action( 'widgets_init', 'kj_widgets_init' );
 
+// The Top Menu
+function main_menu() {
+	 wp_nav_menu(array(
+        'container' => false,                           // Remove nav container
+        'container_class' => '',                        // Class of container
+        'menu' => 'Main Menu', 'kj',                                   // Menu name
+        'theme_location' => 'primary',                // Where it's located in the theme
+        'menu_class' => 'off-canvas-list',
+        'before' => '',                                 // Before each link <a>
+        'after' => '',                                  // After each link </a>
+        'link_before' => '',                            // Before each link text
+        'link_after' => '',                             // After each link text
+        'depth' => 1,                                   // Limit the depth of the nav
+        'fallback_cb' => false,                         // Fallback function (see below)
+    ));
+} /* End Top Menu */
+
 /**
  * Enqueue scripts and styles.
  */
@@ -200,7 +217,7 @@ add_shortcode( 'pinterest_follows', 'get_pinterest_followers' );
 /**
  * Load Pinterest Followers
  */
-require_once( get_template_directory() . '/facebook/facebookLikes.php' );
+// require_once( get_template_directory() . '/facebook/facebookLikes.php' );
 function get_facebook_likes(){
 	global $facebook_likes;
 	return format_number( $facebook_likes );

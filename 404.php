@@ -9,8 +9,10 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_template_part( 'template-parts/menu-header' ); ?>
+
+	<div id="primary" class="content-area row">
+		<main id="main" class="site-main medium-12 columns" role="main">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -54,5 +56,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php get_template_part( 'template-parts/menu-footer' ); ?>
 
 <?php get_footer(); ?>

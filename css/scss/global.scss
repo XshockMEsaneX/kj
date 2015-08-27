@@ -1,0 +1,44 @@
+
+
+html {
+  display: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+	color: $blue-pop;
+}
+
+
+.global-footer {
+  text-align: center;
+}
+
+@media only screen {}
+
+/* Define mobile styles */
+
+
+
+.ghost-button {
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 3px solid $main-text-color;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: all 1.5s ease;
+  &:hover {
+    transition: all 1.5s ease;
+    text-shadow: 0 0 7px $white-shadow;
+    color: #fff;
+    box-shadow: 0 0 7px $white-shadow;
+  }
+}

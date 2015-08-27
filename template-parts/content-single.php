@@ -16,6 +16,9 @@
 		<div class="entry-meta">
 			<?php kj_posted_on(); ?>
 		</div><!-- .entry-meta -->
+		<div class="post-header-image">
+			<?php echo the_post_thumbnail('post-header-image'); ?>
+		</div><!-- .post-header-image -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

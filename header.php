@@ -27,6 +27,17 @@
 
   </script>
 <?php wp_head(); ?>
+<style>
+/* WordPress Responsive Bug Fix */
+	@media screen and (max-width: 782px) {
+	html {
+    	margin-top: 0px !important;
+	}	
+	body {
+		padding-top: 46px !important;
+	}
+}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
