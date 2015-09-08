@@ -24,7 +24,13 @@ get_header(); ?>
 </style>
 
 <?php get_template_part( 'template-parts/menu-header' ); ?>
-
+<?php
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+    the_content();
+endwhile; else:
+    // no posts found
+endif;
+?>
 		<section class="text-center">
 			<img src="<?php echo get_template_directory_uri() . '/img/KJlogo.jpg' ?>" alt="" style="max-height: 94vh; width: auto;">
 		</section>
