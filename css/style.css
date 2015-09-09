@@ -2,7 +2,8 @@ html {
   display: none; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #d5d5d5; }
 
 a {
   color: #21B1FC; }
@@ -104,5 +105,59 @@ a {
 
   #social i {
     margin: 15px 10px 0 10px; } }
+body {
+  background: url("http://www.binkd.com/wp-content/uploads/2013/04/Build-Your-Presence-on-Social-Media.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+hr {
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.tab-bar {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333333; }
+  .tab-bar img {
+    height: 100px;
+    width: auto; }
+  .tab-bar h1 {
+    display: inline;
+    color: #222; }
+  .tab-bar .right-small {
+    border-left: none; }
+  .tab-bar .menu-icon span:after {
+    box-shadow: 0 0px 0 1px #000,0 7px 0 1px #000,0 14px 0 1px #000;
+    top: 100%; }
+
+.new-home section {
+  margin: 25px 0px; }
+.new-home .white-background .row {
+  background-color: rgba(255, 255, 255, 0.95); }
+.new-home .heading
+h2 {
+  text-transform: uppercase; }
+.new-home .info p {
+  margin-top: 1.25rem; }
+  .new-home .info p span {
+    color: #21B1FC; }
+.new-home .social-numbers .row {
+  padding-top: 20px; }
+  .new-home .social-numbers .row .facebook {
+    color: #3b5998; }
+  .new-home .social-numbers .row .twitter {
+    color: #00aced; }
+  .new-home .social-numbers .row .instagram {
+    color: #125688; }
+  .new-home .social-numbers .row .pinterest {
+    color: #cb2027; }
+.new-home .background .row {
+  margin-bottom: 30px; }
+.new-home blockquote {
+  border-left: 1px solid #21B1FC; }
+.new-home .featured .row {
+  margin-bottom: 0px;
+  padding-bottom: 25px; }
 
 /*# sourceMappingURL=style.css.map */
